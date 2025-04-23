@@ -27,15 +27,15 @@ builder.Services.AddSwaggerGen(c =>
 // Injeção de Dependência
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ITarefaService, TarefaSevice>();
-//.Services.AddScoped<IRepository<Tarefa>, Repository<Tarefa>>();
 
-//builder.Services.AddDbContext<ToDoDbContext>(opt => opt.UseInMemoryDatabase("TodoList"));
-var _connectionString= builder.Configuration
+builder.Services.AddDbContext<ToDoDbContext>(opt => opt.UseInMemoryDatabase("TodoList"));
+
+/*var _connectionString= builder.Configuration
                      .GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ToDoDbContext>(options =>
                   options.UseMySql(_connectionString,
-                    ServerVersion.AutoDetect(_connectionString)));
+                    ServerVersion.AutoDetect(_connectionString)));*/
 
 var app = builder.Build();
 
