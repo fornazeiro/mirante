@@ -62,7 +62,13 @@ namespace Mirante.Services.Entities
 
         public async Task DeleteTarefaAsync(int id)
         {
-            throw new NotImplementedException();
+            var tarefaExistente = await _unitOfWork.TarefaRepository.GetByIdAsync(id);
+
+            if (tarefaExistente != null)
+            {
+                _unitOfWork.TarefaRepository.Delete(tarefaExistente);
+                await _unitOfWork.CommitAsync();
+            }
         }
 
         public async Task<IEnumerable<Tarefa>> GetAllTarefasAsync(StatusTarefa? status, DateTime? dataVencimento)
