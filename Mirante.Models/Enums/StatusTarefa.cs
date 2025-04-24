@@ -9,7 +9,7 @@ namespace Mirante.Models.Enums
     public enum StatusTarefa
     {
         Pendente,
-        EmAdamento,
+        EmAndamento,
         Concluido
     }
 }

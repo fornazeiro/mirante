@@ -3,18 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirante.Models", "Mirante.Models\Mirante.Models.csproj", "{0D87454C-7017-4163-8620-275731ACE8C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirante.Models", "Mirante.Models\Mirante.Models.csproj", "{0D87454C-7017-4163-8620-275731ACE8C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirante.Services", "Mirante.Services\Mirante.Services.csproj", "{B518923E-2934-4CBF-9AC2-E0EFEA8BC223}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirante.Services", "Mirante.Services\Mirante.Services.csproj", "{B518923E-2934-4CBF-9AC2-E0EFEA8BC223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirante.Data", "Mirante.Data\Mirante.Data.csproj", "{AE683F98-A9B2-4D98-B60C-AC951990F51C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirante.Data", "Mirante.Data\Mirante.Data.csproj", "{AE683F98-A9B2-4D98-B60C-AC951990F51C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirante.ToDoApi", "Mirante.ToDoApi\Mirante.ToDoApi.csproj", "{C703F748-AA29-4E22-8C98-34C58A4BC335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirante.ToDoApi", "Mirante.ToDoApi\Mirante.ToDoApi.csproj", "{C703F748-AA29-4E22-8C98-34C58A4BC335}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{328F1B94-3412-4BFF-86BB-68C4DC6E1ECA}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirante.Tests", "Mirante.Tests\Mirante.Tests.csproj", "{589FA244-F5D9-4606-A6EA-C62AFA2B1C2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{C703F748-AA29-4E22-8C98-34C58A4BC335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C703F748-AA29-4E22-8C98-34C58A4BC335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C703F748-AA29-4E22-8C98-34C58A4BC335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589FA244-F5D9-4606-A6EA-C62AFA2B1C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589FA244-F5D9-4606-A6EA-C62AFA2B1C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589FA244-F5D9-4606-A6EA-C62AFA2B1C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589FA244-F5D9-4606-A6EA-C62AFA2B1C2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

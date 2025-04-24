@@ -9,6 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.36" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.36" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="xunit" Version="2.4.1" />
@@ -24,7 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mirante.Data\Mirante.Data.csproj" />
-    <ProjectReference Include="..\Mirante.Services\Mirante.Services.csproj" />
   </ItemGroup>
 
 </Project>
